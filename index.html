@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Paystack SDK -->
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Support Our Cause 💙</h1>
+    <p>Together we can make a difference</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>Why Donate?</h2>
+    <p>
+      We are working to bring positive change to communities in need.
+      Your donation will directly contribute to providing essential
+      resources, education, and support.
+    </p>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <div class="video-box">
+      <iframe width="100%" height="315" 
+        src="https://www.youtube.com/embed/azcrPFhaY9k?si=UW8i0v9b7WkQ6xjf" 
+        title="YouTube video" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="video-content">
+      <h2>Keep Coding, Keep Growing</h2>
+      <p>
+        Coding is not just about writing lines of code, it’s about solving
+        real-world problems. Keep improving your skills, face every challenge,
+        and stay consistent in your learning journey. Every bug fixed,
+        every challenge completed is a step forward in becoming a better developer.
+      </p>
+    </div>
+  </section>
+
+  <!-- Donation Section -->
+  <section class="donation-section">
+    <div class="donation-content">
+      <h2>Why Your Donation Matters</h2>
+      <p>
+        Every donation helps us bring resources, education, and empowerment to communities in need. 
+        Your support funds training programs, provides access to learning materials, and ensures
+        sustainable development initiatives.
+      </p>
+      <p>
+        Together, we can create opportunities and transform lives with every contribution made.
+      </p>
+    </div>
+    <div class="donation-box">
+      <h2>Make a Donation</h2>
+      <div class="progress-container">
+        <p><strong>Target:</strong> $5000</p>
+        <p><strong>Raised:</strong> $<span id="raised">0</span></p>
+        <div class="progress-bar">
+          <div id="progress"></div>
+        </div>
+      </div>
+      <form id="donationForm">
+        <input type="number" id="amount" placeholder="Enter amount ($)" required>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button type="submit">Donate Now</button>
+      </form>
+      <button class="secondary-btn">Download Pitch Deck</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Donation Initiative | Built with 💻 by Abdulganiyy</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
